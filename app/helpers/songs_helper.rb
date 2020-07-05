@@ -1,7 +1,7 @@
 module SongsHelper
   
   def display_artist(song)
-    song.artist_name.present?
+    if song.artist
       render 'artists/show'
     else 
       render '/songs/edit'
