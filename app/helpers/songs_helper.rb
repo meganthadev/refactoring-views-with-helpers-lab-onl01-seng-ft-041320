@@ -4,7 +4,7 @@ module SongsHelper
     song.artist_name.present?
       render 'artists/show'
     else 
-      
+      render '/songs/edit'
   end   
     
   end   
